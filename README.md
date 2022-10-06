@@ -2,10 +2,8 @@
 
 ## Overview of Project
 
-Steve(client) needs to develop a tool that shows by year how well green energy stocks performed in the market.
+This project analyses green energy stocks to aid understand their annual return rate. Steve(client) needs to develop a tool that shows by year how well green energy stocks performed in the market.
 
-
-This project analyses green energy stocks to aid understand their annual return rate.
 
 ### Purpose
 This project analyses green energy stocks to aid understand their daily volume and annual return rate, so that Steve's parents can diversify th investement risk based on historical information. Furthermore, insights in refactoring code will be discussed throughout the document.
