@@ -48,6 +48,9 @@ The time for the refactored code was 1.0625
 
 This means the code was optimized by 10% in operation time. In both codes the result is the same but using less computations.
 
+Let's show some examples of refractored script:
+
+
 
 ### Challenges and Difficulties Encountered
 
