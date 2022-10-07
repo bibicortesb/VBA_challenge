@@ -13,6 +13,10 @@ This project analyses green energy stocks to aid understand their daily volume a
 
 Using images and examples of your code, compare the stock performance between 2018 and 2018, as well as the execution times of the original script and the refactored script.
 
+In the analysis two main concerns will be addressed: 
+- Comparison of stock performance in 2017 vs 2018. 
+- Execution time and results in 2018 all stocks analysis with original and refactored code. 
+
 ### Stock Performance
 
 In the table below, daily volume and return rates are shown for the year 2017.
@@ -49,6 +53,19 @@ The time for the refactored code was 1.0625
 This means the code was optimized by 10% in operation time. In both codes the result is the same but using less computations.
 
 Let's show some examples of refractored script:
+
+The first main difference was that in the refactored script, arrays were used to store data of daily volume and prices. 
+The code is as follows:
+
+    Dim tickerVolumes(12) As Long
+
+    Dim tickerStartingprices(12) As Single
+
+    Dim tickerEndingprices(12) As Single
+    
+ In order to access the arrays, tickerIndex variable needed to be introduced. 
+ This way we could get ticker names and use them as index to fill the three arrays created (tickerVolumes, tickerStartingprices, tickerEndingprices.
+    
 
 
 
