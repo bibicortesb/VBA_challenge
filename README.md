@@ -65,9 +65,86 @@ The code is as follows:
     
  In order to access the arrays, tickerIndex variable needed to be introduced. 
  This way we could get ticker names and use them as index to fill the three arrays created (tickerVolumes, tickerStartingprices, tickerEndingprices.
+ 
+ A for loop was created to initialize the tickerVolumes to zero:
+
     
+    For tickerIndex = 0 To 11
+    
+    'Get names of tickers
+    ticker = tickers(tickerIndex)
+    tickerVolumes(tickerIndex) = 0
 
 
+    
+After this, another loop was created just like in the original code. The difference lays in the arguments within the if-conditions. Ifs were used to identify tickerStartingprices and tickersEndingprices.
+
+    
+    For tickerIndex = 0 To 11
+    
+    'Get names of tickers
+    ticker = tickers(tickerIndex)
+    tickerVolumes(tickerIndex) = 0
+
+        
+    ''2b) Loop over all the rows in the spreadsheet.
+    For i = 2 To RowCount
+    
+        '3a) Increase volume for current ticker
+        
+            If Cells(i, 1).Value = ticker Then
+    
+        tickerVolumes(tickerIndex) = tickerVolumes(tickerIndex) + Cells(i, 8).Value
+        
+        End If
+        
+        
+        '3b) Check if the current row is the first row with the selected tickerIndex.
+        'If  Then
+            
+            If Cells(i - 1, 1).Value <> ticker And Cells(i, 1).Value = ticker Then
+    
+        tickerStartingprices(tickerIndex) = Cells(i, 6).Value
+        
+        End If
+            
+        'End If
+        
+        '3c) check if the current row is the last row with the selected ticker
+         'If the next row’s ticker doesn’t match, increase the tickerIndex.
+        'If  Then
+            
+            
+            '3d Increase the tickerIndex.
+            
+            
+        'End If
+
+        If Cells(i + 1, 1).Value <> ticker And Cells(i, 1).Value = ticker Then
+
+        tickerEndingprices(tickerIndex) = Cells(i, 6).Value
+    
+        End If
+    
+    Next i
+    
+    Next tickerIndex
+
+Through this code the arrays were fed, therefore, it will loop through the arrays to output the Ticker, Total Daily Volume, and Return.
+ 
+ 
+    For i = 0 To 11
+        
+        Worksheets("AllStocksAnalysisRefactored").Activate
+        
+        Cells(4 + i, 1).Value = tickers(i)
+        Cells(4 + i, 2).Value = tickerVolumes(i)
+        Cells(4 + i, 3).Value = tickerEndingprices(i) / tickerStartingprices(i) - 1
+      
+        
+    Next i
+
+Basically, the main change from original code and refactored code was the use of arrays to manage information. 
 
 ### Challenges and Difficulties Encountered
 
