@@ -144,15 +144,19 @@ Through this code the arrays were fed, therefore, it will loop through the array
         
     Next i
 
-Basically, the main change from original code and refactored code was the use of arrays to manage information. T
+Basically, the main change from original code and refactored code was the use of arrays to manage information, making it more flexible and understandable.
 
 ## Summary
 
 ### Advantages and disadvantages of refactoring code
 
-The project a refactored code that reached to the same results with a different way to deliver them.  Through arrays computation time was reduced by 10%.
-This shows that improvement is always possible. Although, 
+After some research to deepen my knowledge of refactoring code, I encountered that there are advantages and disadvantages of this practice. Maddy (2022), It is helpful because it makes it easier to add new code, it is reusable and easier to mantain/scalate. Disadvatages when refactoring code may include time consumption, retesting, compatibility issues with pre-existing code and even create problems that did not exist with the previous functioning code. 
+
+In this specific case, the refactored code for All Stocks Analysis reached the same results. The code became easier to understand. Through the arrays, it is more flexible to deliver the client with further analysis if he/she decides new indicators to assest stocks performance. Moreover, computation time was reduced by 10%. The  disadvanate I can spot, however, is that it was indeed time-consuming to work on the code and reach to the same result. In conlusion, this project was proof that refactoring code is a good practice that makes code more understandable, flexible and can reduce computation time. While it also has some inconvinients such as time consumption or incompability, it is the role of the codder to decide whether refactoring is worth it depending on what the client's and company's necessity is. 
 
 
-### Advantages and disadvantages of refactoring code of the original and refactored VBA script
+## References
+
+Maddy. (2022, January 5). What is "code refactoring"? Tech with Maddy. Retrieved October 10, 2022, from https://techwithmaddy.com/what-is-code-refactoring 
+
 
