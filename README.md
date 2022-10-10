@@ -144,17 +144,14 @@ Through this code the arrays were fed, therefore, it will loop through the array
         
     Next i
 
-Basically, the main change from original code and refactored code was the use of arrays to manage information. 
-
-### Challenges and Difficulties Encountered
-
-## Results
-The analysis is well described with screenshots and code (4 pt).
+Basically, the main change from original code and refactored code was the use of arrays to manage information. T
 
 ## Summary
+
 ### Advantages and disadvantages of refactoring code
 
-In general, refactoring helps improving code 
+The project a refactored code that reached to the same results with a different way to deliver them.  Through arrays computation time was reduced by 10%.
+This shows that improvement is always possible. Although, 
 
 
 ### Advantages and disadvantages of refactoring code of the original and refactored VBA script
